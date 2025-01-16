@@ -1,0 +1,6 @@
+pandas
+numpy
+gurobipy=11.0.0
+xlsxwriter
+xlwt
+openpyxl
