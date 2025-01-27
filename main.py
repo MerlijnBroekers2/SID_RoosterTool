@@ -8,6 +8,7 @@ sunday_quota = 20
 
 # Read schedule from Excel
 schedule = ExcelTool.read_availability("Beschikbaarheid_Mock_Full.xlsx")
+schedule.calculate_availability()
 schedule.calculate_non_sunday_hours()
 
 solver = LPSolver(schedule, max_hours, sunday_quota)
@@ -18,3 +19,4 @@ solver.solve()
 
 # Save schedule to file
 ExcelTool.write_schedule(schedule, solver, "Final_Schedule.xlsx")
+ExcelTool.write_metrics(schedule, solver, "Metrics_generated_schedule.xlsx")
