@@ -1,6 +1,6 @@
 # Roster Optimizer
 
-This project builds a monthly **rooster** based on an availability Excel file and a mixed-integer model. 
+This project builds a monthly **rooster** based on an availability Excel file and a mixed-integer model. Builds upon the original tool built by ???, OG code is included in `roostertool.py`.
 
 ---
 
